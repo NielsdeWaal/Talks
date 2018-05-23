@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+<style>
+.reveal section img { background:none; border:none; box-shadow:none; }
+</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                                    <h2>Learning C++ and Embedded development as a student</h2>
+                                </section>
+                                <section>
+                                    <h3><code style="text-transform: none;">$(whoami)</code></h3>
+                                    <ul class="fragment">
+                                        <li>Niels de Waal</li>
+                                        <li>Student</li>
+                                        <li>Computer Engineering</li>
+                                </section>
+                                <section>
+                                    <section data-background-image="img/8086.jpg">
+                                        <h2>What is <span style="text-transform: none">x86</span>?</h2>
+                                        <p class="fragment">Much like an Node.js dependency</p>
+                                        <p class="fragment">It&#39s big and expansive</p>
+                                        <p class="fragment">We are <i>kinda</i> stuck with it</p>
+                                    </section>
+                                    <section data-background-image="img/BBCMicro.jpg">
+                                        <h2>That is why we use a RISC architecture</h2>
+                                        <p class="fragment">Whether ARM these days still RISC is debatable</p>
+                                        <p class="fragment">We just have to wait for RISC-V</p>
+                                        <p class="fragment">But that&#39s a discussion for another day</p>
+                                    </section>
+                                </section>
+                                <section>
+                                    <section>
+                                        <h2>What do we have?</h2>
+                                        <p>How can we learn embedded development?</p>
+                                    </section>
+                                    <section>
+                                        <h2>The Arduino</h2>
+                                        <img src="img/ArduinoUno.png">
+                                        <p>And over 9000 modules for it</p>
+                                    </section>
+                                    <section>
+                                        <h2>So much stuff</h2>
+                                        <ul class='fragment'>
+                                            <li>Domotica</li>
+                                            <li>Learning programming with children</li>
+                                            <li>Very cheap and accessible</li>
+                                    </section>
+                                    <section>
+                                        <h2>But there is more</h2>
+                                        <ul class='frament'>
+                                            <li>Even cheaper, $1 (EFM32TG)</li>
+                                            <li>Even weirder, fuel injection?</li>
+                                            <li>Even smaller, close to 1mmx1mm</li>
+                                    </section>
+                                </section>
+                                <section>
+                                    <section>
+                                        <h2>But where is the C++ arm chip?</h2>
+                                        <p class='fragment'>Let me explain</p>
+                                    </section>
+                                    <section>
+                                        <h2>A few years ago</h2>
+                                        <p class='fragment'>Learning python</p>
+                                    </section>
+                                    <section>
+                                        <h2>Soooooo many resources</h2>
+                                        <p class='fragment'>learnpython.org and many others</p>
+                                        <p class='fragment'>Google knows everything</p>
+                                        <p class='fragment'>Less toxic version of Stack Overflow</p>
+                                        <p class='fragment'>Just start tinkering</p>
+                                    </section>
+                                </section>
+                                <section>
+                                    <section>
+                                        <h2>Where is C++?</h2>
+                                        <p class='fragment'>Sort of everywhere and nowhere</p>
+                                    </section>
+                                    <section>
+                                        <h2>Learning C++</h2>
+                                        <ul class='fragment'> 
+                                            <li>I did some C after python, but never got far</li>
+                                            <li>Started C++ at the HU</li>
+                                            <li>Was a struggle for a while</li>
+                                    </section>
+                                    <section>
+                                        <h2>Amazing community</h2>
+                                        <ul class='fragment'>
+                                            <li>Many great blogs</li>
+                                            <li>Very helpful and knowledgeable people</li>
+                                    </section>
+                                    <section>
+                                        <h2>How to educate?</h2>
+                                        <p class='fragment'>No real learncpp.org</p>
+                                        <p class='fragment'><i>Well kinda</i></p>
+                                        <p class='fragment'>Many attempts</p>
+                                        <p class='fragment'>It just isn't very helpful</p>
+                                    </section>
+                                    <section>
+                                        <h2>What&#39s wrong with them?</h2>
+                                        <ul class='fragment'>
+                                            <li>Outdated</li>
+                                            <li>No standard library</li>
+                                            <li>Incomplete</li>
+                                            <li>Or, just plain wrong</li>
+                                    </section>
+                                </section>
+                                <section>
+                                    <section>
+                                        <h2>What is it like to do embedded development?</h2>
+                                        <p class='fragment'>Really wanna know?</p>
+                                    </section>
+                                    <section>
+                                        <h2>Fucking awful</h2>
+                                        <h3 class="fragment">┻━┻ ︵ヽ(`Д´)ﾉ︵﻿ ┻━┻</h3>
+                                    </section>
+                                    <section>
+                                        <h2>Toolchain hell</h2>
+                                        <p class='fragment'>A lot of different attempts</p>
+                                        <p class='fragment'>Some more succesful than others</p>
+                                        <p class='fragment'>Ungodly amount of proprietary stuff</p>
+                                    </section>
+                                </section>
+                                <section>
+                                    <section>
+                                        <h2>Is there light ahead?</h2>
+                                        <p class='fragment'>Gaining more focus</p>
+                                        <p class='fragment'>Interest of companies</p>
+                                        <p class='fragment'>Just people with a better vision</p>
+                                    </section>
+                                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
